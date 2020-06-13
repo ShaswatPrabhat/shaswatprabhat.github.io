@@ -6,6 +6,8 @@ description: > # this means to ignore newlines until "show_exerpts:"
   Please bookmark this page for updates.
 show_excerpts: true # set to true to show excerpts on the homepage
 
+remote_theme: thelehhman/texture
+
 texture:
   title: Shaswat Prabhat
   tagline: Developer. Reader. Writer.
