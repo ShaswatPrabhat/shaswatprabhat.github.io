@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import { Home } from './Home';
 import { LINKS } from './utils/constants';
 
 const App = () => (
-  <Router>
+  <HashRouter>
     <Switch>
       <Route path={LINKS.HOME_PATH}>
         <Home />
@@ -14,7 +14,7 @@ const App = () => (
         <Home />
       </Route>
     </Switch>
-  </Router>
+  </HashRouter>
 );
 
 export default App;
