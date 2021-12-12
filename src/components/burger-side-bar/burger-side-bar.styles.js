@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import device from '../utils/break-points';
+import device from '../../utils/break-points';
 
 export const HamburgerMenuContainer = styled.div`
   padding: 20px;

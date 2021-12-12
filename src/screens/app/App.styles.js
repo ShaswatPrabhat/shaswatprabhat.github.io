@@ -18,7 +18,6 @@ export const AppHeader = styled.header`
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 `;
 
 export const StyledAnchor = styled(m(Link))`
@@ -34,4 +33,3 @@ export const StyledAnchor = styled(m(Link))`
     text-align: center;
   }
 `;
-

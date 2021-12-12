@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import { Home } from './Home';
-import { LINKS } from './utils/constants';
+import { Home } from '../home/Home';
+import { LINKS } from '../../utils/constants';
 
 const App = () => (
   <div className="App">

@@ -5,7 +5,7 @@ import {
   HamburgerMenuIconContainer,
   StyledMenu,
 } from './burger-side-bar.styles';
-import { StyledAnchor } from '../App.styles';
+import { StyledAnchor } from '../../screens/app/App.styles';
 
 const framerStyledAnchorVariants = {
   opened: {
