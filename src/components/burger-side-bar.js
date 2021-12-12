@@ -5,8 +5,6 @@ import {
   HamburgerMenuIconContainer,
   StyledMenu,
 } from './burger-side-bar.styles';
-
-import { LINKS } from '../utils/constants';
 import { StyledAnchor } from '../App.styles';
 
 const framerStyledAnchorVariants = {
@@ -22,7 +20,7 @@ const framerStyledAnchorVariants = {
   },
 };
 
-const BurgerSideBar = () => {
+const BurgerSideBar = ({ burgerContents }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -40,27 +38,18 @@ const BurgerSideBar = () => {
         />
       </HamburgerMenuIconContainer>
       <StyledMenu open={isMenuOpen}>
-        <StyledAnchor
-          variants={framerStyledAnchorVariants}
-          animate={isMenuOpen ? 'opened' : 'closed'}
-          href={LINKS.HOME_PATH}
-        >
-          Programming
-        </StyledAnchor>
-        <StyledAnchor
-          variants={framerStyledAnchorVariants}
-          animate={isMenuOpen ? 'opened' : 'closed'}
-          href={LINKS.HOME_PATH}
-        >
-          Books
-        </StyledAnchor>
-        <StyledAnchor
-          variants={framerStyledAnchorVariants}
-          animate={isMenuOpen ? 'opened' : 'closed'}
-          href={LINKS.POEMS_PATH}
-        >
-          Poems
-        </StyledAnchor>
+        {burgerContents.map(({ link, title }) => (
+          <StyledAnchor
+            variants={framerStyledAnchorVariants}
+            animate={isMenuOpen ? 'opened' : 'closed'}
+            to={link}
+            onClick={() => {
+              setIsMenuOpen(false);
+            }}
+          >
+            {title}
+          </StyledAnchor>
+        ))}
       </StyledMenu>
     </HamburgerMenuContainer>
   );

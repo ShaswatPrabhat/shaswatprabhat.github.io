@@ -37,9 +37,8 @@ export const StyledMenu = styled.nav`
 
   @media ${device('max').tablet} {
     transform: ${({ open }) => {
-    if (open) return 'translateZ(-100)';
-    return 'translateZ(50)';
-  }};
+      if (open) return 'translateZ(-100)';
+      return 'translateZ(50)';
+    }};
   }
 `;
-

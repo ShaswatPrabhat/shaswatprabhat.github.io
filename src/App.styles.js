@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { m } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export const ScreenContainer = styled.div`
   min-height: 100vh;
@@ -20,7 +21,7 @@ export const AppHeader = styled.header`
   color: white;
 `;
 
-export const StyledAnchor = styled(m.a)`
+export const StyledAnchor = styled(m(Link))`
   font-size: 2rem;
   padding: 2rem 0;
   letter-spacing: 0.5rem;

@@ -4,14 +4,23 @@ import { AppHeader, ScreenContainer, StyledAnchor } from './App.styles';
 import { LINKS } from './utils/constants';
 import React from 'react';
 
-const loadFeatures = () => import('./framer-motion-feature.js').then((res) => res.default);
+const loadFeatures = () =>
+  import('./framer-motion-feature.js').then((res) => res.default);
 
+const burgerContents = [
+  { link: LINKS.HOME_PATH, title: 'Programming' },
+  {
+    link: LINKS.HOME_PATH,
+    title: 'Books',
+  },
+  { link: LINKS.POEMS_PATH, title: 'Poems' },
+];
 export const Home = () => (
-  <div className='App'>
+  <div className="App">
     <LazyMotion features={loadFeatures}>
-      <BurgerSideBar />
+      <BurgerSideBar burgerContents={burgerContents} />
       <AppHeader>
-        <StyledAnchor href={LINKS.HOME_PATH}>Shaswat&apos;s blog</StyledAnchor>
+        <StyledAnchor to={LINKS.HOME_PATH}>Shaswat&apos;s blog</StyledAnchor>
       </AppHeader>
       <ScreenContainer>
         <m.div

@@ -5,16 +5,14 @@ import { Home } from './Home';
 import { LINKS } from './utils/constants';
 
 const App = () => (
-  <HashRouter>
-    <Switch>
-      <Route exact path={LINKS.HOME_PATH}>
-        <Home />
-      </Route>
-      <Route exact path={LINKS.POEMS_PATH}>
-        <Home />
-      </Route>
-    </Switch>
-  </HashRouter>
+  <div className="App">
+    <HashRouter basename={LINKS.HOME_PATH}>
+      <Switch>
+        <Route exact path={LINKS.HOME_PATH} component={Home} />
+        <Route exact path={LINKS.POEMS_PATH} component={Home} />
+      </Switch>
+    </HashRouter>
+  </div>
 );
 
 export default App;
