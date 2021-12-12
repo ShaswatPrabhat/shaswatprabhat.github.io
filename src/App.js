@@ -7,10 +7,10 @@ import { LINKS } from './utils/constants';
 const App = () => (
   <HashRouter>
     <Switch>
-      <Route path={LINKS.HOME_PATH}>
+      <Route exact path={LINKS.HOME_PATH}>
         <Home />
       </Route>
-      <Route path={LINKS.POEMS_PATH}>
+      <Route exact path={LINKS.POEMS_PATH}>
         <Home />
       </Route>
     </Switch>
