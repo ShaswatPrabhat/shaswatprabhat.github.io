@@ -3,7 +3,7 @@ import BurgerSideBar from '../../components/burger-side-bar/burger-side-bar';
 import { AppHeader, ScreenContainer, StyledAnchor } from '../app/App.styles';
 import { LINKS } from '../../utils/constants';
 import React from 'react';
-import { HomeContentContainer } from './Home.styles';
+import { HomeContentContainer } from './HbdPnoki.styles';
 
 const loadFeatures = () =>
   import('../../framer-motion-feature.js').then((res) => res.default);
@@ -16,12 +16,12 @@ const burgerContents = [
   },
   { link: LINKS.POEMS_PATH, title: 'Poems' },
 ];
-export const Home = () => (
+export const HbdPnoki = () => (
   <div className="App">
     <LazyMotion features={loadFeatures}>
       <BurgerSideBar burgerContents={burgerContents} />
       <AppHeader>
-        <StyledAnchor to={LINKS.HOME_PATH}>Shaswat&apos;s blog</StyledAnchor>
+        <StyledAnchor to={LINKS.HOME_PATH}>Happy Birthday Pnoki!!</StyledAnchor>
       </AppHeader>
       <ScreenContainer>
         <AnimatePresence>
@@ -30,8 +30,7 @@ export const Home = () => (
             animate={{ scale: 1 }}
             transition={{ type: 'spring', duration: 1.8, bounce: 0.7 }}
           >
-            <h2>Welcome to my blog!</h2>
-            <p>Here I will share my musings and general Shaswat stuff</p>
+            <h2>Dhin Chak Dhin Chak Dhin Chak</h2>
           </HomeContentContainer>
         </AnimatePresence>
       </ScreenContainer>
