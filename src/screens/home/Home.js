@@ -15,6 +15,7 @@ const burgerContents = [
     title: 'Books',
   },
   { link: LINKS.POEMS_PATH, title: 'Poems' },
+  { link: LINKS.HBD_PNOKI, title: 'HBD!!' },
 ];
 export const Home = () => (
   <div className="App">
