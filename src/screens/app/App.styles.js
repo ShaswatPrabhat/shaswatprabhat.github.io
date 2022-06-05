@@ -10,6 +10,7 @@ export const ScreenContainer = styled.div`
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  z-index: 99;
 `;
 export const AppHeader = styled.header`
   min-height: 10vh;

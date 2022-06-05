@@ -31,3 +31,14 @@ export const BackgroundWrapper = styled(m.div)`
   width: 50%;
   height: 50%;
 `;
+
+export const HbdContainer = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  z-index: 99;
+`;

@@ -1,16 +1,17 @@
-import { AnimatePresence, LazyMotion } from 'framer-motion';
-import { ScreenContainer } from '../app/App.styles';
-import React, { useEffect } from 'react';
+import { AnimatePresence, LazyMotion, m } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
 import Snowfall from 'react-snowfall';
 import { HbdHeaderComponent } from './HbdHeaderComponent';
-import { GradientBackgroundContainer } from './HbdPnoki.styles';
-import { HbdBodyComponent } from './HbdBodyComponent';
+import { GradientBackgroundContainer, HbdContainer } from './HbdPnoki.styles';
+import { HbdFirstAnimation } from './HbdFirstAnimation';
+import { HbdSecondAnimation } from './HbdSecondAnimation';
 // import Video from '../../assets/background.mp4';
 
 const loadFeatures = () =>
   import('../../framer-motion-feature.js').then((res) => res.default);
 
 export const HbdPnoki = () => {
+  const [animationState, setAnimationState] = useState(0);
   useEffect(() => {
     document
       .querySelector('meta[name="description"]')
@@ -31,7 +32,7 @@ export const HbdPnoki = () => {
       <LazyMotion features={loadFeatures}>
         <Snowfall />
         <HbdHeaderComponent />
-        <ScreenContainer>
+        <HbdContainer>
           {/* <video
             height="50%"
             width="50%"
@@ -46,9 +47,23 @@ export const HbdPnoki = () => {
             <source src={Video} type="video/mp4" />
           </video> */}
           <AnimatePresence>
-            <HbdBodyComponent />
+            {animationState === 0 && (
+              <HbdFirstAnimation
+                onAnimationsComplete={() => {
+                  setAnimationState(1);
+                }}
+              />
+            )}
+            {animationState === 1 && (
+              <HbdSecondAnimation
+                onAnimationsComplete={() => {
+                  setAnimationState(3);
+                }}
+              />
+            )}
+            {animationState === 3 && <m.p>44444</m.p>}
           </AnimatePresence>
-        </ScreenContainer>
+        </HbdContainer>
       </LazyMotion>
     </GradientBackgroundContainer>
   );

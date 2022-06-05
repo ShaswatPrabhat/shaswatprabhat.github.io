@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 const bodyLineAnimateIn = {
   opacity: 1,
   scale: 1.2,
-  transition: { type: 'spring', duration: 1.2 },
+  transition: { type: 'spring', duration: 2 },
 };
 const bodyLineAnimateOut = {
   opacity: 0,
@@ -13,7 +13,7 @@ const bodyLineAnimateOut = {
   transition: { type: 'spring', ease: 'easeOut', mass: 75 },
 };
 
-export const HbdBodyComponent = () => {
+export const HbdFirstAnimation = ({ onAnimationsComplete }) => {
   const [onLoadAnimationComplete, setOnLoadAnimationComplete] = useState(false);
   const animationLine1 = useAnimation();
   const animationLine2 = useAnimation();
@@ -22,7 +22,10 @@ export const HbdBodyComponent = () => {
 
   useEffect(() => {
     const onLoadLinesAnimation = async () => {
-      await animationLine1.start(bodyLineAnimateIn);
+      await animationLine1.start({
+        ...bodyLineAnimateIn,
+        transition: { delay: 2 },
+      });
       await animationLine2.start(bodyLineAnimateIn);
       await animationLine3.start(bodyLineAnimateIn);
       await animationLine4.start(bodyLineAnimateIn);
@@ -34,6 +37,9 @@ export const HbdBodyComponent = () => {
         await animationLine2.start(bodyLineAnimateOut);
         await animationLine3.start(bodyLineAnimateOut);
         await animationLine4.start(bodyLineAnimateOut);
+        setTimeout(() => {
+          onAnimationsComplete();
+        }, 500);
       };
       setTimeout(() => {
         onUnLoadLinesAnimation();
@@ -49,6 +55,7 @@ export const HbdBodyComponent = () => {
     animationLine3,
     animationLine4,
     onLoadAnimationComplete,
+    onAnimationsComplete,
   ]);
 
   return (
