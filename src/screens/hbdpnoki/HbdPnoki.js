@@ -1,21 +1,42 @@
-import { AnimatePresence, LazyMotion } from 'framer-motion';
-import { HbdHeader, ScreenContainer, StyledHbdAnchor } from '../app/App.styles';
-import { LINKS } from '../../utils/constants';
+import { AnimatePresence, LazyMotion, useAnimation, m } from 'framer-motion';
+import { ScreenContainer } from '../app/App.styles';
 import React, { useEffect } from 'react';
-import { HomeContentContainer } from './HbdPnoki.styles';
 import Snowfall from 'react-snowfall';
+import { HbdHeaderComponent } from './HbdHeaderComponent';
+import {
+  BodyLine1,
+  BodyLine2,
+  BodyLine3,
+  GradientBackgroundContainer,
+} from './HbdPnoki.styles';
 // import Video from '../../assets/background.mp4';
 
 const loadFeatures = () =>
   import('../../framer-motion-feature.js').then((res) => res.default);
 
-const animationProps = {
-  initial: { scale: 0.85 },
-  animate: { scale: 1 },
-  transition: { type: 'spring', duration: 1.8, bounce: 0.7 },
+const bodyLineAnimationProps = {
+  opacity: 1,
+  scale: 1.2,
+  transition: { type: 'spring', duration: 1.2 },
 };
-
 export const HbdPnoki = () => {
+  const animationLine1 = useAnimation();
+  const animationLine2 = useAnimation();
+  const animationLine3 = useAnimation();
+  const animationLine4 = useAnimation();
+
+  useEffect(() => {
+    const onLoadLinesAnimation = async () => {
+      await animationLine1.start(bodyLineAnimationProps);
+      await animationLine2.start(bodyLineAnimationProps);
+      await animationLine3.start(bodyLineAnimationProps);
+      await animationLine4.start(bodyLineAnimationProps);
+    };
+    setTimeout(() => {
+      onLoadLinesAnimation();
+    }, 500);
+  }, [animationLine1, animationLine2, animationLine3, animationLine4]);
+
   useEffect(() => {
     document
       .querySelector('meta[name="description"]')
@@ -32,23 +53,10 @@ export const HbdPnoki = () => {
   }, []);
 
   return (
-    <div
-      className="HbdPnoki"
-      style={{
-        background: `#0f0c29`,
-        // eslint-disable-next-line
-        background: `-webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29)`,
-        // eslint-disable-next-line
-        background: `linear-gradient(to right, #24243e, #302b63, #0f0c29)`,
-      }}
-    >
+    <GradientBackgroundContainer className="HbdPnoki">
       <LazyMotion features={loadFeatures}>
         <Snowfall />
-        <HbdHeader>
-          <StyledHbdAnchor to={LINKS.HBD_PNOKI} {...animationProps}>
-            Happy Birthday Pnoki!!
-          </StyledHbdAnchor>
-        </HbdHeader>
+        <HbdHeaderComponent />
         <ScreenContainer>
           {/* <video
             height="50%"
@@ -64,32 +72,51 @@ export const HbdPnoki = () => {
             <source src={Video} type="video/mp4" />
           </video> */}
           <AnimatePresence>
-            <HomeContentContainer {...animationProps}>
-              <h2
-                style={{
-                  color: '#faf5e3',
-                }}
-              >
-                Dhin Chak!
-              </h2>
-              <h2
-                style={{
-                  color: '#faf1d2',
-                }}
-              >
-                Dhin Chak!!
-              </h2>
-              <h2
-                style={{
-                  color: '#f7ebc1',
-                }}
-              >
-                Dhin dhin dhaaa!
-              </h2>
-            </HomeContentContainer>
+            <m.div
+              animate={animationLine1}
+              key="bodyLine1"
+              style={{
+                opacity: 0,
+              }}
+            >
+              <BodyLine1>
+                👋 Guess which of my favorite <br />
+                human beings was born today ?
+              </BodyLine1>
+            </m.div>
+            <m.div
+              animate={animationLine2}
+              key="bodyLine2"
+              style={{
+                opacity: 0,
+              }}
+            >
+              <BodyLine2>Hint: It's you! 👊👊</BodyLine2>
+            </m.div>
+            <m.div
+              animate={animationLine3}
+              key="bodyLine3"
+              style={{
+                opacity: 0,
+              }}
+            >
+              <BodyLine3>Pankhudi 'The Hegde' Bhonsle</BodyLine3>
+            </m.div>
+            <m.div
+              animate={animationLine4}
+              key="bodyLine4"
+              style={{
+                opacity: 0,
+              }}
+            >
+              <BodyLine1>
+                I had to! 😈😈 <br />
+                Sorry
+              </BodyLine1>
+            </m.div>
           </AnimatePresence>
         </ScreenContainer>
       </LazyMotion>
-    </div>
+    </GradientBackgroundContainer>
   );
 };
