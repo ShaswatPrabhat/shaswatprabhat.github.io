@@ -34,7 +34,14 @@ export const HbdThirdAnimation = () => {
 
   return (
     <>
-      <HbdThirdAnimationWrapper>
+      <HbdThirdAnimationWrapper
+        animate={{ opacity: 1 }}
+        transition={{
+          type: 'ease-in',
+          duration: 1.5,
+          delay: 1,
+        }}
+      >
         <m.div
           className="next"
           onClick={() => paginate(-1)}

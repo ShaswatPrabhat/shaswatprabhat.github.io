@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { m } from 'framer-motion';
+import device from '../../utils/break-points';
 
 export const GradientBackgroundContainer = styled(m.div)`
   background: #0f0c29;
@@ -48,13 +49,17 @@ export const HbdThirdAnimationWrapper = styled(m.div)`
   width: 80vh;
   height: 70vh;
   border-radius: 5%;
-  opacity: 1;
+  opacity: 0;
   margin-top: -10vh;
   padding: 2vh;
   display: flex;
   background: #d3cce3;
   background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
   background: linear-gradient(to right, #e9e4f0, #d3cce3);
+  @media ${device('max').tablet} {
+    width: 80%;
+    height: 80%;
+  }
 `;
 
 export const HbdSecondAnimationWrapper = styled(m.div)`
@@ -67,4 +72,8 @@ export const HbdSecondAnimationWrapper = styled(m.div)`
   background: #d3cce3;
   background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
   background: linear-gradient(to right, #e9e4f0, #d3cce3);
+  @media ${device('max').tablet} {
+    width: 80%;
+    height: 80%;
+  }
 `;
