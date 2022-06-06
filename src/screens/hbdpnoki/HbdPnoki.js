@@ -1,10 +1,11 @@
-import { AnimatePresence, LazyMotion, m } from 'framer-motion';
+import { AnimatePresence, LazyMotion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 import Snowfall from 'react-snowfall';
 import { HbdHeaderComponent } from './HbdHeaderComponent';
 import { GradientBackgroundContainer, HbdContainer } from './HbdPnoki.styles';
 import { HbdFirstAnimation } from './HbdFirstAnimation';
 import { HbdSecondAnimation } from './HbdSecondAnimation';
+import { HbdThirdAnimation } from './HbdThirdAnimation';
 // import Video from '../../assets/background.mp4';
 
 const loadFeatures = () =>
@@ -12,6 +13,7 @@ const loadFeatures = () =>
 
 export const HbdPnoki = () => {
   const [animationState, setAnimationState] = useState(0);
+
   useEffect(() => {
     document
       .querySelector('meta[name="description"]')
@@ -61,7 +63,7 @@ export const HbdPnoki = () => {
                 }}
               />
             )}
-            {animationState === 2 && <m.p>3333</m.p>}
+            {animationState === 2 && <HbdThirdAnimation />}
           </AnimatePresence>
         </HbdContainer>
       </LazyMotion>
