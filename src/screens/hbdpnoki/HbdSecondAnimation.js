@@ -1,8 +1,33 @@
 import { m } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
+const MotionParagraphs = ({ delay, children, fontWeight, fontSize }) => (
+  <m.p
+    style={{
+      color: 'black',
+      alignSelf: 'center',
+      opacity: 0,
+      fontWeight: fontWeight || 100,
+      fontSize: fontSize || '80%',
+    }}
+    animate={{ opacity: 1 }}
+    transition={{
+      type: 'spring',
+      duration: 1,
+      delay: delay,
+    }}
+  >
+    {children}
+  </m.p>
+);
+
 export const HbdSecondAnimation = ({ onAnimationsComplete }) => {
+  const buttonText1 = 'Press me to eat some fragile male egos for breakfast!';
+  const buttonText2 =
+    'Nah! You do that everyday, Press to watch some aesthetic memories of yourself';
   const [showSensibleMessage, setShowSensibleMessage] = useState(false);
+  const [buttonContentState, setButtonContentState] = useState(buttonText1);
+
   useEffect(() => {
     setTimeout(() => {
       setShowSensibleMessage(true);
@@ -19,6 +44,10 @@ export const HbdSecondAnimation = ({ onAnimationsComplete }) => {
         opacity: 0,
         marginTop: '-10vh',
         padding: '2vh',
+        //   media: `(max-width: 576px) {
+        //   maxWidth: '70%',
+        //   maxHeight: '50%',
+        // }`,
       }}
       animate={{ rotate: 360, opacity: 1 }}
       transition={{
@@ -28,165 +57,68 @@ export const HbdSecondAnimation = ({ onAnimationsComplete }) => {
         delay: 1,
       }}
     >
-      <m.p
-        style={{
-          color: 'black',
-          alignSelf: 'center',
-          opacity: 0,
-          fontWeight: 500,
-        }}
-        animate={{ opacity: 1 }}
-        transition={{
-          type: 'spring',
-          duration: 1,
-          delay: 6,
-        }}
-      >
+      <MotionParagraphs delay={6} fontWeight={500} fontSize="100%">
         👇Here are some facts to remind you why you are so awesome! 👇
-      </m.p>
+      </MotionParagraphs>
       {!showSensibleMessage && (
         <>
-          <m.p
-            style={{
-              color: 'black',
-              alignSelf: 'center',
-              opacity: 0,
-            }}
-            animate={{ opacity: 1 }}
-            transition={{
-              type: 'spring',
-              duration: 1,
-              delay: 7,
-            }}
-          >
+          <MotionParagraphs delay={7}>
             😍 You care for everyone
-          </m.p>
-          <m.p
-            style={{
-              color: 'black',
-              alignSelf: 'center',
-              opacity: 0,
-            }}
-            animate={{ opacity: 1 }}
-            transition={{
-              type: 'spring',
-              duration: 1,
-              delay: 8,
-            }}
-          >
+          </MotionParagraphs>
+          <MotionParagraphs delay={8}>
             🤌 You are an awesome barber
-          </m.p>
-          <m.p
-            style={{
-              color: 'black',
-              alignSelf: 'center',
-              opacity: 0,
-            }}
-            animate={{ opacity: 1 }}
-            transition={{
-              type: 'spring',
-              duration: 1,
-              delay: 9,
-            }}
-          >
+          </MotionParagraphs>
+          <MotionParagraphs delay={9}>
             🍰🏋️‍♀️ You are passionate about life and coding and food and...
-          </m.p>
+          </MotionParagraphs>
 
-          <m.p
-            style={{
-              color: 'black',
-              alignSelf: 'center',
-              opacity: 0,
-            }}
-            animate={{ opacity: 1 }}
-            transition={{
-              type: 'spring',
-              duration: 1,
-              delay: 13,
-            }}
-          >
-            I am saying you are awesome! Believe it!
+          <MotionParagraphs delay={13}>
+            Me telling no you awesome!!
+            <br /> Believe it!
             <br />
             👊 🤛 🤜
-          </m.p>
+          </MotionParagraphs>
         </>
       )}
       {showSensibleMessage && (
         <>
-          <m.p
-            style={{
-              color: 'black',
-              alignSelf: 'center',
-              opacity: 0,
-            }}
-            animate={{ opacity: 1 }}
-            transition={{
-              type: 'spring',
-              duration: 1,
-            }}
-          >
-            but for me...
-          </m.p>
-          <m.p
-            style={{
-              color: 'black',
-              alignSelf: 'center',
-              opacity: 0,
-            }}
-            animate={{ opacity: 1 }}
-            transition={{
-              type: 'spring',
-              duration: 1,
-              delay: 7,
-            }}
-          >
+          <MotionParagraphs delay={null}>but for me...</MotionParagraphs>
+          <MotionParagraphs delay={7}>
             You are my best friend 👩‍❤️‍👨 <br />
             and the best human being I know 💯 <br />
             and you inspire me to be better 🏃
-          </m.p>
-          <m.p
-            style={{
-              color: 'black',
-              alignSelf: 'center',
-              opacity: 0,
-              fontWeight: 500,
-            }}
-            animate={{ opacity: 1 }}
-            transition={{
-              type: 'spring',
-              duration: 1,
-              delay: 15,
-            }}
-          >
+          </MotionParagraphs>
+          <MotionParagraphs delay={15}>
             Hence proven!
             <br />
             <m.button
               style={{
-                marginTop: '2vh',
-                padding: '1vh',
+                marginTop: '10%',
+                padding: '2%',
                 borderRadius: '3vh',
-                width: '20vh',
-                height: '7vh',
-                backgroundColor: '#dee1f8',
+                flexGrow: 1,
+                maxWidth: '50%',
+                backgroundColor: 'white',
                 borderStyle: 'none',
-                border: '10px',
+                border: `0.5px solid black`,
                 boxShadow: `rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0`,
                 boxSizing: `border-box`,
-                color: `#3c4043`,
-                textAlign: 'center',
                 fontSize: '1.5vh',
               }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={() => {
-                onAnimationsComplete();
+                if (buttonContentState === buttonText1) {
+                  setButtonContentState(buttonText2);
+                } else {
+                  onAnimationsComplete();
+                }
               }}
               type="button"
             >
-              Press me to eat <br />
-              some fragile male egos for breakfast!
+              {buttonContentState}
             </m.button>
-          </m.p>
+          </MotionParagraphs>
         </>
       )}
     </m.div>

@@ -57,11 +57,11 @@ export const HbdPnoki = () => {
             {animationState === 1 && (
               <HbdSecondAnimation
                 onAnimationsComplete={() => {
-                  setAnimationState(3);
+                  setAnimationState(2);
                 }}
               />
             )}
-            {animationState === 3 && <m.p>44444</m.p>}
+            {animationState === 2 && <m.p>3333</m.p>}
           </AnimatePresence>
         </HbdContainer>
       </LazyMotion>

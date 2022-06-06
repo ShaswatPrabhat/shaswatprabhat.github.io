@@ -5,12 +5,12 @@ import React, { useEffect, useState } from 'react';
 const bodyLineAnimateIn = {
   opacity: 1,
   scale: 1.2,
-  transition: { type: 'spring', duration: 2 },
+  transition: { type: 'spring', duration: 2, delay: 1 },
 };
 const bodyLineAnimateOut = {
   opacity: 0,
   scale: 0.7,
-  transition: { type: 'spring', ease: 'easeOut', mass: 75 },
+  transition: { type: 'spring', mass: 50 },
 };
 
 export const HbdFirstAnimation = ({ onAnimationsComplete }) => {
@@ -22,10 +22,7 @@ export const HbdFirstAnimation = ({ onAnimationsComplete }) => {
 
   useEffect(() => {
     const onLoadLinesAnimation = async () => {
-      await animationLine1.start({
-        ...bodyLineAnimateIn,
-        transition: { delay: 2 },
-      });
+      await animationLine1.start(bodyLineAnimateIn);
       await animationLine2.start(bodyLineAnimateIn);
       await animationLine3.start(bodyLineAnimateIn);
       await animationLine4.start(bodyLineAnimateIn);
@@ -90,7 +87,7 @@ export const HbdFirstAnimation = ({ onAnimationsComplete }) => {
       >
         <BodyLine3>
           Pankhudi <br />
-          'Pnoki'
+          'Hegda Bhushi'
           <br /> Bhonsle
         </BodyLine3>
       </m.div>
