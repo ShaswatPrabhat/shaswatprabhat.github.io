@@ -37,6 +37,24 @@ import dompiBirthdayShoot from '../assets/dompiBirthdayShoot.gif';
 import dompiReadingDharmaForest from '../assets/dompiReadingDharmaForest.jpg';
 import dompiEatFrag from '../assets/dompiEatFrag.jpg';
 import dompiHairCutting from '../assets/dompiHairCutting.jpg';
+import dompiDoingHaaaaah from '../assets/dompiDoingHaaaaah.jpg';
+import dompiBubbleGum from '../assets/dompiBubbleGum.jpg';
+import dompiWithPaaInMumbai from '../assets/dompiWithPaaInMumbai.jpg';
+import dompiPullingPaa from '../assets/dompiPullingPaa.jpg';
+import dompiMakingList from '../assets/dompiMakingList.jpg';
+import dompiCurdCheek from '../assets/dompiCurdCheek.jpg';
+import dompiMakingMala from '../assets/dompiMakingMala.jpg';
+import dompiWithMe from '../assets/dompiWithMe.jpg';
+import dompiLookingFine from '../assets/dompiLookingFine.jpg';
+import dompiLaughingAtMGRoad from '../assets/dompiLaughingAtMGRoad.jpg';
+import dompiAndMeTrekking from '../assets/dompiAndMeTrekking.jpg';
+import dompiCycle from '../assets/dompiCycle.jpg';
+import dompiCallNotAnswered from '../assets/dompiCallNotAnswered.jpg';
+import dompiWithPaaa from '../assets/dompiWithPaaa.jpg';
+import dompiEmoji from '../assets/dompiEmoji.jpg';
+import dompiGoaSunny from '../assets/dompiGoaSunny.jpg';
+import dompiPhoenix from '../assets/dompiPhoenix.jpg';
+import dompiSpreadingHappiness from '../assets/dompiSpreadingHappiness.jpg';
 
 export const images = [
   {
@@ -53,7 +71,7 @@ export const images = [
     url: dompiWithPaaAnxious,
     text:
       'With Paaa, always anxious about food. And restaurants. And cuisine. ' +
-      'And RAS. And Anku. And her returning from Ranchi. And forgetting about it.',
+      'And RAS. And Anku. And her returning from Ranchi. And forgetting about it. And eating guiltily after forgetting',
   },
   {
     url: dompiWithPaaSpicy,
@@ -79,7 +97,6 @@ export const images = [
     url: dompi8thShop,
     text: 'Smiling in front of a physical manifestation of my birthday. I will buy this shop one day. And the Scooty. And the folks woking there!',
   },
-
   {
     url: dompiWithAnkuMeInBackground,
     text: 'An entirely innocent person in between two wild creatures. Find yourself someone who looks at you the way pNoki looks at Anku.',
@@ -89,16 +106,8 @@ export const images = [
     text: 'This picture is a mood.',
   },
   {
-    url: dompiHWD,
-    text: 'This picture is a mood.',
-  },
-  {
     url: dompiAvengers,
     text: 'Our friendly avengers from project!',
-  },
-  {
-    url: dompiHaeHaeWoman,
-    text: 'HaeHaeMon - the Pokemon that makes HaeHae noises',
   },
   {
     url: dompiHaeHaeWoman,
@@ -125,20 +134,12 @@ export const images = [
     text: 'Used to be so fun dragging you to Title Waves, Or when you refused to go there on my birthday! #neverForget',
   },
   {
-    url: dompiTitleWaveFlower,
-    text: 'Used to be so fun dragging you to Title Waves, Or when you refused to go there on my birthday! #neverForget',
-  },
-  {
     url: dompiSunkissed,
     text: 'The unofficial photographer of Mumbai evenings for a certain model like poser. Still asking for my payment!',
   },
   {
     url: dompiCheckingOnThePhotographer,
-    text: "Wake up! We have just take 967 pic of today's evening. Buckle up!",
-  },
-  {
-    url: dompiSunKissedCollage,
-    text: "The best phone ever! The best collages ever. No! It wasn't the Photos app! It was my phone!",
+    text: "Wake up! We have just taken 967 pic of today's evening. Buckle up!",
   },
   {
     url: dompiSunKissedCollage,
@@ -163,14 +164,6 @@ export const images = [
   {
     url: dompiPosingInRain,
     text: 'Uff! Teri Ada! I like the way you move...',
-  },
-  {
-    url: dompiPosingInRain,
-    text: 'Uff! Teri Ada! I like the way you move...',
-  },
-  {
-    url: dompiFinallyOneCandidPhoto,
-    text: 'Ahh! Finally a candid photo. Or is it the calm before the Storm? #neverTooSafe',
   },
   {
     url: dompiFinallyOneCandidPhoto,
@@ -213,20 +206,90 @@ export const images = [
     text: 'Huntress on the prowl! Each day! Every day! Lots of fragile male egos! I never go hungry #eatThemRaw',
   },
   {
-    url: dompiEatFrag,
-    text: 'Huntress on the prowl! Each day! Every day! Lots of fragile male egos! I never go hungry #eatThemRaw',
-  },
-  {
     url: dompiHairCutting,
-    text: 'I might not have told this at the time but I was scared Pnoki ' +
+    text:
+      'I might not have told this at the time but I was scared Pnoki ' +
       'might cut off one of my ears, Thankfully all three survived. Good old days.',
   },
-
+  {
+    url: dompiDoingHaaaaah,
+    text: 'Is this how the T-Rex in Jurassic Park might have felt? ',
+  },
+  {
+    url: dompiBubbleGum,
+    text: 'Yeah and just like that plop! I burst your bubble! Your Golang skills suck!!!',
+  },
+  {
+    url: dompiWithPaaInMumbai,
+    text: 'My 2 FAV Human beings coming out of their depressive states for a few days was such a breath of fresh air. To rising above pain.',
+  },
+  {
+    url: dompiPullingPaa,
+    text: '"Arrey Pankhu mere gardan mein dard hai." "Arrey dikha toh kidhar hai dard" ',
+  },
+  {
+    url: dompiMakingList,
+    text:
+      'Making lists is one of her favorite things. Here we are just after flat hunting.' +
+      ' Often making lists about making lists!',
+  },
+  {
+    url: dompiCurdCheek,
+    text: 'You mean there is curd on my face around an area where my tongue cannot reach ? Are you sure ? Are you absolutely sure? Look me in the eyes when I am talking with you!',
+  },
+  {
+    url: dompiMakingMala,
+    text: 'Apart from being skilled in arts, coding and finance Dompi is also a good gardener and costume designer.',
+  },
+  {
+    url: dompiWithMe,
+    text: 'The two of us! My love, my heart, my soul, my all',
+  },
+  {
+    url: dompiLookingFine,
+    text: 'Beautiful Dompi, pretty effortlessly, show-off with a looootttt of effort',
+  },
+  {
+    url: dompiLaughingAtMGRoad,
+    text: 'I survived shopping with Dompi, This is her being happiest ever! We did not buy the dress though, because the reason of her happiness was me of course',
+  },
+  {
+    url: dompiAndMeTrekking,
+    text: 'Me and Dompi decided to go trekking till Uttarakhand. That day we embarked on an epic journey. Returned from a hill nearby the same day, the trip was epic though',
+  },
+  {
+    url: dompiCycle,
+    text: '"Hurry up we need to chase that car ASAP!" "But where am I going to sit?" "Who said anything about sitting? You are running behind my cycle. "',
+  },
+  {
+    url: dompiCallNotAnswered,
+    text: "TrueCaller is hunting for this photo! Also this face haunts Paaaaaaa's dreams till date. Sometimes even mine!",
+  },
+  {
+    url: dompiWithPaaa,
+    text: 'Look at these beautiful innocent faces! Yeah I fell for the same trap. #GhochuBachhe #LifeBlood',
+  },
+  {
+    url: dompiEmoji,
+    text: "Yeah! So ummm this is hard to explain. If you know the emoji you know this face. If you don't then... how are you even alive ?",
+  },
   {
     url: dompiBeforeBus,
     text:
       'Here we see a Dompi in her natural habitat. ' +
       'Travelling, carefree and wearing a Noice T-Shirt. ',
+  },
+  {
+    url: dompiGoaSunny,
+    text: 'Goa was chapters ending in our lives. Yet the sun never felt this good having my folks around. Sand Sun Pnoki',
+  },
+  {
+    url: dompiPhoenix,
+    text: 'We found a model dressed just like Pnoki, as if someone had copied Pnoki and placed the model there. It might have been the opposite but we refused to believe that',
+  },
+  {
+    url: dompiSpreadingHappiness,
+    text: 'After CoVid, the only thing we were happy spreading was happiness. A fountain of Joy and thirsty travellers.',
   },
   {
     url: dompiDoughnut,

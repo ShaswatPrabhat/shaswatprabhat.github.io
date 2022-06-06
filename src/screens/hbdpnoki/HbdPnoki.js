@@ -35,19 +35,6 @@ export const HbdPnoki = () => {
         <Snowfall />
         <HbdHeaderComponent />
         <HbdContainer>
-          {/* <video
-            height="50%"
-            width="50%"
-            loop
-            style={{ zIndex: 99 }}
-            autoPlay
-            id="backgroundVideo"
-            preload
-            muted
-            on
-          >
-            <source src={Video} type="video/mp4" />
-          </video> */}
           <AnimatePresence>
             {animationState === 0 && (
               <HbdFirstAnimation
