@@ -42,3 +42,29 @@ export const HbdContainer = styled.div`
   color: white;
   z-index: 99;
 `;
+
+export const HbdThirdAnimationWrapper = styled(m.div)`
+  z-index: 99;
+  width: 80vh;
+  height: 70vh;
+  border-radius: 5%;
+  opacity: 1;
+  margin-top: -10vh;
+  padding: 2vh;
+  display: flex;
+  background: #d3cce3;
+  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+  background: linear-gradient(to right, #e9e4f0, #d3cce3);
+`;
+
+export const HbdSecondAnimationWrapper = styled(m.div)`
+  width: 50vh;
+  height: 50vh;
+  border-radius: 5%;
+  opacity: 0;
+  margin-top: -10vh;
+  padding: 2vh;
+  background: #d3cce3;
+  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+  background: linear-gradient(to right, #e9e4f0, #d3cce3);
+`;

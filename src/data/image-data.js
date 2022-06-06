@@ -61,7 +61,7 @@ export const images = [
     url: dompiWithAnku,
     text:
       'Chronologically, the oldest picture I have. ' +
-      'With Anku, your earliest friend since childhood. ',
+      'With Anku, your earliest friend since childhood times at Lodha.',
   },
   {
     url: dompiChopsticks,

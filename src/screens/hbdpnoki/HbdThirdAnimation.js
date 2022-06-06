@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { m } from 'framer-motion';
 import { wrap } from 'popmotion';
 import { images } from '../../data/image-data';
+import { HbdThirdAnimationWrapper } from './HbdPnoki.styles';
 
 const variants = {
   enter: (direction) => {
@@ -33,28 +34,19 @@ export const HbdThirdAnimation = () => {
 
   return (
     <>
-      <m.div
-        style={{
-          zIndex: 99,
-          width: '80vh',
-          height: '70vh',
-          borderRadius: 30,
-          backgroundColor: '#faf7f7',
-          opacity: 1,
-          marginTop: '-10vh',
-          padding: '2vh',
-          display: 'flex',
-        }}
-      >
+      <HbdThirdAnimationWrapper>
         <m.div
           className="next"
           onClick={() => paginate(-1)}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
           style={{
             zIndex: 80,
-            color: 'black',
+            color: '#5035ad',
             opacity: 1,
             rotateY: '180deg',
             alignSelf: 'center',
+            fontSize: 100,
           }}
         >
           {'‣'}
@@ -94,16 +86,19 @@ export const HbdThirdAnimation = () => {
         <m.div
           className="prev"
           onClick={() => paginate(1)}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
           style={{
             zIndex: 99,
             opacity: 1,
             alignSelf: 'center',
-            color: 'black',
+            color: '#5035ad',
+            fontSize: 100,
           }}
         >
           {'‣'}
         </m.div>
-      </m.div>
+      </HbdThirdAnimationWrapper>
     </>
   );
 };

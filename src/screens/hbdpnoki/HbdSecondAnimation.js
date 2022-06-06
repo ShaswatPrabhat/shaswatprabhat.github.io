@@ -1,5 +1,6 @@
 import { m } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
+import { HbdSecondAnimationWrapper } from './HbdPnoki.styles';
 
 const MotionParagraphs = ({ delay, children, fontWeight, fontSize }) => (
   <m.p
@@ -35,20 +36,7 @@ export const HbdSecondAnimation = ({ onAnimationsComplete }) => {
   }, []);
 
   return (
-    <m.div
-      style={{
-        width: '50vh',
-        height: '50vh',
-        borderRadius: 30,
-        backgroundColor: '#faf7f7',
-        opacity: 0,
-        marginTop: '-10vh',
-        padding: '2vh',
-        //   media: `(max-width: 576px) {
-        //   maxWidth: '70%',
-        //   maxHeight: '50%',
-        // }`,
-      }}
+    <HbdSecondAnimationWrapper
       animate={{ rotate: 360, opacity: 1 }}
       transition={{
         type: 'spring',
@@ -121,6 +109,6 @@ export const HbdSecondAnimation = ({ onAnimationsComplete }) => {
           </MotionParagraphs>
         </>
       )}
-    </m.div>
+    </HbdSecondAnimationWrapper>
   );
 };
