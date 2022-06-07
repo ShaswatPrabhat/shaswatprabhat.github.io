@@ -66,7 +66,7 @@ export const HbdFirstAnimation = ({ onAnimationsComplete }) => {
       >
         <BodyLine1>
           👋 Guess which of my favorite <br />
-          human beings was born today ?
+          humans was born today ?
         </BodyLine1>
       </m.div>
       <m.div

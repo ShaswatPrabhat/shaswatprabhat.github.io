@@ -60,12 +60,12 @@ export const images = [
   {
     url: dompiWithAnku,
     text:
-      'Chronologically, the oldest picture I have. ' +
+      'Chronologically, the oldest picture I have...' +
       'With Anku, your earliest friend since childhood times at Lodha.',
   },
   {
     url: dompiChopsticks,
-    text: 'At Fatty Bao? I guess. I can never be sure of it. Just look at that happiness!',
+    text: 'At Fatty Bao? I guess. I can never be sure of it. Just look at that happiness! Do you miss those Baos? ',
   },
   {
     url: dompiWithPaaAnxious,
@@ -75,27 +75,27 @@ export const images = [
   },
   {
     url: dompiWithPaaSpicy,
-    text: 'If one picture could sum up that night! We realized the importance of jet sprays',
+    text: 'If one picture could sum up that night! We realized the importance of jet sprays. #SpicyNoodles',
   },
   {
     url: dompiEagerToTell,
-    text: 'Wo dekha qya? Uske plate mein केकड़ा tha! Zinda wo bhi! Aee Aadi chal na केकड़ा khate hain',
+    text: '"Wo dekha qya? Uske plate mein केकड़ा tha! Zinda wo bhi! Aee Aadi chal na केकड़ा khate hain"',
   },
   {
     url: dompiAtRajdhaniMumbai,
-    text: "Now I am content! Won't you order something? What do you mean we are sharing the same plate?",
+    text: '"Now I am content! Won\'t you order something? What do you mean we are sharing the same plate?"',
   },
   {
     url: dompiGameNight,
-    text: 'aaaand I win! Again! No no I am playing this for the first time. What do you mean you are a pro? So who is next? ',
+    text: '"aaaand I win... again! No no I am playing this for the first time. What do you mean you are a pro? So, who is next? Who are up to play a round of Catan? "',
   },
   {
     url: dompiFeedback,
-    text: 'Always good at giving Feedbacks Dompi Kumar Bhonsle',
+    text: 'Always good at giving Feedbacks Dompi Kumar Bhonsle.',
   },
   {
     url: dompi8thShop,
-    text: 'Smiling in front of a physical manifestation of my birthday. I will buy this shop one day. And the Scooty. And the folks woking there!',
+    text: '"Smiling in front of a physical manifestation of my birthday. I will buy this shop one day. And the Scooty. And the folks woking there!"',
   },
   {
     url: dompiWithAnkuMeInBackground,
@@ -127,7 +127,7 @@ export const images = [
   },
   {
     url: dompiEndorphins,
-    text: 'When we used to run to get those Endorphins instead of doomscrolling Instrgram',
+    text: 'When we used to run to get those Endorphins instead of doom-scrolling Instagram',
   },
   {
     url: dompiTitleWaveFlower,
@@ -135,19 +135,19 @@ export const images = [
   },
   {
     url: dompiSunkissed,
-    text: 'The unofficial photographer of Mumbai evenings for a certain model like poser. Still asking for my payment!',
+    text: 'The unofficial photographer of Mumbai evenings for a certain model like poser. Still asking for my payment! #StopExplotingFreelancers',
   },
   {
     url: dompiCheckingOnThePhotographer,
-    text: "Wake up! We have just taken 967 pic of today's evening. Buckle up!",
+    text: '"Wake up! We have just taken 967 pic today evening. Buckle up!"',
   },
   {
     url: dompiSunKissedCollage,
-    text: "The best phone ever! The best collages ever. No! It wasn't the Photos app! It was my phone!",
+    text: "The best phone ever! The best collages ever. No! It wasn't the Photos app! It was my phone! Still the best phone ever.",
   },
   {
     url: dompiEatingBun,
-    text: 'If I was paid one rupee for every food picture I had of you I would have exactly 2 rupees because you would take the rest to get more food!',
+    text: 'If I was paid one rupee for every food picture I have of you I would have exactly 2 rupees because you would take the rest to buy more food!',
   },
   {
     url: dompiSalmanRush,
@@ -155,7 +155,7 @@ export const images = [
   },
   {
     url: dompiBookShelfAnimation,
-    text: 'Main hoon hi khud ki favorite!',
+    text: '"Main hoon hi khud ki favorite!"',
   },
   {
     url: dompiDoingHaeInRain,
@@ -163,7 +163,7 @@ export const images = [
   },
   {
     url: dompiPosingInRain,
-    text: 'Uff! Teri Ada! I like the way you move...',
+    text: '♪♪♪ Uff! Teri Ada! I like the way you move...♪♪♪',
   },
   {
     url: dompiFinallyOneCandidPhoto,
@@ -171,11 +171,11 @@ export const images = [
   },
   {
     url: dompiAngry1,
-    text: 'What do you mean I will never be 25 years old again? I am always 25, forever 25. You, you are the oldie!',
+    text: '"What do you mean I will never be 25 years old again? I am always 25, forever 25. You, you are the oldie!"',
   },
   {
     url: dompiA7X,
-    text: 'This is my first Metal T-Shirt. \nIt used to be mine. Now it is not. How does it look better on you? ',
+    text: 'This was my first Metal T-Shirt. \nIt used to be mine. Now it is not. How does it look better on you?',
   },
   {
     url: dompiTwerkShoot,
@@ -183,7 +183,7 @@ export const images = [
   },
   {
     url: dompiAfterVaccinationPaudha,
-    text: 'After getting first dose of vaccine, among my Paudha friends. I love Paudhas',
+    text: '"After getting first dose of vaccine, among my Paudha friends. I love Paudhas. Paudha is one of my favorite words."',
   },
   {
     url: dompiSunkissed2,
@@ -195,15 +195,15 @@ export const images = [
   },
   {
     url: dompiBirthdayShoot,
-    text: "Such a beautiful Sunset! What do you mean it looked the same yesterday? Yesterday wasn't my birthday! Huh!",
+    text: '"Such a beautiful Sunset! What do you mean it looked the same yesterday? Yesterday wasn\'t my birthday! Huh! Chal photu kheech photu..."',
   },
   {
     url: dompiReadingDharmaForest,
-    text: 'Yeah! Draupadi was the queen! Who is DrishtaDaupna by the way? How can Bheem eat so much without farting? So Mahabharata Very wow',
+    text: '"Yeah! Draupadi was the queen! Who is DrishtaDaupna by the way? How can Bheem eat so much without farting? So Mahabharata, Very wow"',
   },
   {
     url: dompiEatFrag,
-    text: 'Huntress on the prowl! Each day! Every day! Lots of fragile male egos! I never go hungry #eatThemRaw',
+    text: 'Huntress on the prowl! Each day! Every day! Lots of fragile male egos! Never go hungry #eatThemRaw',
   },
   {
     url: dompiHairCutting,
@@ -213,11 +213,11 @@ export const images = [
   },
   {
     url: dompiDoingHaaaaah,
-    text: 'Is this how the T-Rex in Jurassic Park might have felt? ',
+    text: 'Is this how the T-Rex in Jurassic Park might have felt? Is the T-Rex your idol, apart from Su4ita and me ?',
   },
   {
     url: dompiBubbleGum,
-    text: 'Yeah and just like that plop! I burst your bubble! Your Golang skills suck!!!',
+    text: '"Yeah and just like that plop! I burst your bubble! Your Golang skills suck!!!"',
   },
   {
     url: dompiWithPaaInMumbai,
@@ -235,7 +235,7 @@ export const images = [
   },
   {
     url: dompiCurdCheek,
-    text: 'You mean there is curd on my face around an area where my tongue cannot reach ? Are you sure ? Are you absolutely sure? Look me in the eyes when I am talking with you!',
+    text: '"You mean there is curd on my face around an area where my tongue cannot reach ? Are you sure ? Are you absolutely sure? Look me in the eyes when I am talking with you!"',
   },
   {
     url: dompiMakingMala,
@@ -251,11 +251,11 @@ export const images = [
   },
   {
     url: dompiLaughingAtMGRoad,
-    text: 'I survived shopping with Dompi, This is her being happiest ever! We did not buy the dress though, because the reason of her happiness was me of course',
+    text: 'I survived shopping with Dompi, This is her being happiest ever! We did not buy the dress though, because the reason of her happiness was me, of course. (Gingerly walking away from the shop)',
   },
   {
     url: dompiAndMeTrekking,
-    text: 'Me and Dompi decided to go trekking till Uttarakhand. That day we embarked on an epic journey. Returned from a hill nearby the same day, the trip was epic though',
+    text: 'Me and Dompi decided to go trekking till Uttarakhand. That day we embarked on an epic journey. Returned from a hill near Pune the same day, the trip was epic though',
   },
   {
     url: dompiCycle,
@@ -281,11 +281,11 @@ export const images = [
   },
   {
     url: dompiGoaSunny,
-    text: 'Goa was chapters ending in our lives. Yet the sun never felt this good having my folks around. Sand Sun Pnoki',
+    text: 'Goa was chapters ending in our lives. Yet the sun never felt this good having my folks around. Sand Sun Pnoki. The old gang and new endings.',
   },
   {
     url: dompiPhoenix,
-    text: 'We found a model dressed just like Pnoki, as if someone had copied Pnoki and placed the model there. It might have been the opposite but we refused to believe that',
+    text: 'We found a doll dressed just like Pnoki, as if someone had copied Pnoki and placed it there. It might have been the opposite but we refuse to believe that.',
   },
   {
     url: dompiSpreadingHappiness,
@@ -295,6 +295,7 @@ export const images = [
     url: dompiDoughnut,
     text:
       'Dompi is eating a doughnut. Dompi being a foodie has ' +
-      'led me to explore so many new cuisines and food. Dompi has finished the doughnut',
+      'led me to explore so many new cuisines and food. ' +
+      'Dompi has finished the doughnut',
   },
 ];
