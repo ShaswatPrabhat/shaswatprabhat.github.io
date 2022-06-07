@@ -63,6 +63,7 @@ export const HbdThirdAnimationWrapper = styled(m.div)`
   background: linear-gradient(to right, #e9e4f0, #d3cce3);
   @media ${device('max').tablet} {
     max-width: 90%;
+    min-height: 300px;
   }
 `;
 
@@ -78,7 +79,7 @@ export const HbdSecondAnimationWrapper = styled(m.div)`
   background: linear-gradient(to right, #e9e4f0, #d3cce3);
   @media ${device('max').tablet} {
     width: 80%;
-    height: 80%;
+    min-height: 80%;
   }
 `;
 
