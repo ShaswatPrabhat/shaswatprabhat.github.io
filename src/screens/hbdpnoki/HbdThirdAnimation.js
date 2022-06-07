@@ -54,7 +54,6 @@ export const HbdThirdAnimation = () => {
         >
           {'‣'}
         </HbdPointLeftArrow>
-
         <m.img
           key={page}
           src={images[imageIndex].url}
@@ -62,6 +61,8 @@ export const HbdThirdAnimation = () => {
           variants={variants}
           initial="enter"
           animate="center"
+          loading="eager"
+          fetchpriority="high"
           transition={{
             x: { type: 'spring', stiffness: 100, damping: 30 },
             opacity: { duration: 0.2 },
