@@ -77,3 +77,28 @@ export const HbdSecondAnimationWrapper = styled(m.div)`
     height: 80%;
   }
 `;
+
+export const HbdPointLeftArrow = styled(m.div)`
+  z-index: 80;
+  color: #5035ad;
+  opacity: 1;
+  rotate: 180deg;
+  align-self: center;
+  font-size: 100px;
+  @media ${device('max').tablet} {
+    font-size: 50px;
+    max-width: 2px;
+  }
+`;
+
+export const HbdPointRightArrow = styled(m.div)`
+  z-index: 80;
+  color: #5035ad;
+  opacity: 1;
+  align-self: center;
+  font-size: 100px;
+  @media ${device('max').tablet} {
+    font-size: 50px;
+    max-width: 2px;
+  }
+`;

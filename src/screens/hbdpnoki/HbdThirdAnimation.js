@@ -3,7 +3,11 @@ import { useState } from 'react';
 import { m } from 'framer-motion';
 import { wrap } from 'popmotion';
 import { images } from '../../data/image-data';
-import { HbdThirdAnimationWrapper } from './HbdPnoki.styles';
+import {
+  HbdPointLeftArrow,
+  HbdPointRightArrow,
+  HbdThirdAnimationWrapper,
+} from './HbdPnoki.styles';
 
 const variants = {
   enter: (direction) => {
@@ -42,22 +46,15 @@ export const HbdThirdAnimation = () => {
           delay: 1,
         }}
       >
-        <m.div
+        <HbdPointLeftArrow
           className="next"
           onClick={() => paginate(-1)}
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
-          style={{
-            zIndex: 80,
-            color: '#5035ad',
-            opacity: 1,
-            rotateY: '180deg',
-            alignSelf: 'center',
-            fontSize: 100,
-          }}
         >
           {'‣'}
-        </m.div>
+        </HbdPointLeftArrow>
+
         <m.img
           key={page}
           src={images[imageIndex].url}
@@ -90,21 +87,14 @@ export const HbdThirdAnimation = () => {
           {images[imageIndex].text}
         </m.p>
 
-        <m.div
+        <HbdPointRightArrow
           className="prev"
           onClick={() => paginate(1)}
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
-          style={{
-            zIndex: 99,
-            opacity: 1,
-            alignSelf: 'center',
-            color: '#5035ad',
-            fontSize: 100,
-          }}
         >
           {'‣'}
-        </m.div>
+        </HbdPointRightArrow>
       </HbdThirdAnimationWrapper>
     </>
   );
