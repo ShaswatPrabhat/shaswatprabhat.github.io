@@ -42,23 +42,27 @@ export const HbdContainer = styled.div`
   font-size: calc(10px + 2vmin);
   color: white;
   z-index: 99;
+  flex: 1;
 `;
 
 export const HbdThirdAnimationWrapper = styled(m.div)`
   z-index: 99;
-  width: 80vh;
-  height: 70vh;
+  max-width: 40%;
+  max-height: 500px;
+  flex-shrink: 100;
   border-radius: 5%;
   opacity: 0;
   margin-top: -10vh;
-  padding: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background: #d3cce3;
   background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
   background: linear-gradient(to right, #e9e4f0, #d3cce3);
   @media ${device('max').tablet} {
-    width: 80%;
-    height: 80%;
+    max-width: 90%;
   }
 `;
 
@@ -82,12 +86,12 @@ export const HbdPointLeftArrow = styled(m.div)`
   z-index: 80;
   color: #5035ad;
   opacity: 1;
-  rotate: 180deg;
   align-self: center;
   font-size: 100px;
+
   @media ${device('max').tablet} {
     font-size: 50px;
-    max-width: 2px;
+    width: 10%;
   }
 `;
 
@@ -99,6 +103,6 @@ export const HbdPointRightArrow = styled(m.div)`
   font-size: 100px;
   @media ${device('max').tablet} {
     font-size: 50px;
-    max-width: 2px;
+    width: 10%;
   }
 `;

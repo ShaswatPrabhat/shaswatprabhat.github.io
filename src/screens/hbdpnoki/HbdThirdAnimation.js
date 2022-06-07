@@ -52,7 +52,7 @@ export const HbdThirdAnimation = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          {'‣'}
+          &#8249;
         </HbdPointLeftArrow>
         <m.img
           key={page}
@@ -68,13 +68,13 @@ export const HbdThirdAnimation = () => {
             opacity: { duration: 0.2 },
           }}
           style={{
-            width: '50%',
+            maxWidth: '40%',
           }}
         />
         <m.p
           key={images[imageIndex].text}
           style={{
-            width: '50%',
+            maxWidth: '40%',
             opacity: 0,
             color: 'black',
             alignSelf: 'center',
@@ -94,7 +94,7 @@ export const HbdThirdAnimation = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          {'‣'}
+          &#8250;
         </HbdPointRightArrow>
       </HbdThirdAnimationWrapper>
     </>
