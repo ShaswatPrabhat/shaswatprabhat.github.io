@@ -38,6 +38,9 @@ const HeaderSidebarAndNavbar = (props) => {
   const [showHamburger, setShowHamburger] = useState(false);
 
   useEffect(() => {
+    if (window.matchMedia(`${device('max').tablet}`).matches) {
+      setShowHamburger(true);
+    }
     window
       .matchMedia(`${device('max').tablet}`)
       .addEventListener('change', () => {
