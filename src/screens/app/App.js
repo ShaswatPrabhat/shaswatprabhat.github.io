@@ -6,7 +6,7 @@ import { HbdPnoki } from '../hbdpnoki/HbdPnoki';
 import { LINKS } from '../../utils/constants';
 
 const App = () => (
-  <div className="App">
+  <div className="App" >
     <HashRouter basename={LINKS.HOME_PATH}>
       <Switch>
         <Route exact path={LINKS.HOME_PATH} component={Home} />

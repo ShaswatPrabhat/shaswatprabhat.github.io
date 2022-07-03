@@ -5,11 +5,14 @@ export const HamburgerMenuContainer = styled.div`
   padding: 20px;
   position: fixed;
   z-index: 100;
+  width: 15%;
 `;
 
 export const HamburgerMenuIconContainer = styled.div`
   z-index: 100;
   position: fixed;
+  margin-top: 20px;
+  margin-left: 20px;
   @media ${device('max').tablet} {
     bottom: 0;
     right: 0;
@@ -25,9 +28,8 @@ export const StyledMenu = styled.nav`
   justify-content: center;
   opacity: 1;
   background: #000;
-  transform: ${({ open }) => (open ? 'translateX(100)' : 'translateX(-100%)')};
+  transform: ${({ open }) => (open ? 'translateX(0%)' : 'translateX(-100%)')};
   height: 100vh;
-  width: 30vh;
   text-align: left;
   padding: 2rem;
   position: absolute;
