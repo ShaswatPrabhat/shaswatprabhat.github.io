@@ -11,6 +11,7 @@ const App = () => (
       <Switch>
         <Route exact path={LINKS.HOME_PATH} component={Home} />
         <Route exact path={LINKS.POEMS_PATH} component={Home} />
+        <Route exact path={LINKS.MOVIES_PATH} component={Home} />
         <Route exact path={LINKS.HBD_PNOKI} component={HbdPnoki} />
       </Switch>
     </HashRouter>

@@ -3,6 +3,8 @@ import { m } from 'framer-motion';
 
 export const HomeContentContainer = styled(m.div)`
   align-self: center;
-  flex: 0.1;
-  width: 80%;
+  margin-top: 20vh;
+  text-align: center;
+  padding-left: 2vh;
+  padding-right: 2vh;
 `;

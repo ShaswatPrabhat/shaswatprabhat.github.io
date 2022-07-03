@@ -7,7 +7,7 @@ export const ScreenContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
   z-index: 99;
@@ -34,13 +34,14 @@ export const StyledAnchor = styled(m(Link))`
   letter-spacing: 0.5rem;
   color: #61dafb;
   text-decoration: none;
-  transition: color 0.3s linear;
+  //transition: color 0.3s linear;
 
   @media (max-width: 576px) {
     font-size: 1.5rem;
     text-align: center;
   }
 `;
+
 export const StyledHbdAnchor = styled(m(Link))`
   font-size: 3rem;
   padding: 2rem 0;

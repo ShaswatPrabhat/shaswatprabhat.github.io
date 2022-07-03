@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import HamburgerMenuIcon from 'react-hamburger-menu';
 import {
-  HamburgerMenuContainer,
   HamburgerMenuIconContainer,
   StyledMenu,
 } from './burger-side-bar.styles';
@@ -9,14 +8,14 @@ import { StyledAnchor } from '../../screens/app/App.styles';
 
 const framerStyledAnchorVariants = {
   opened: {
-    scale: 1,
+    opacity: 1,
     transition: {
       delay: 0.2,
-      duration: 0.5,
+      duration: 1,
     },
   },
   closed: {
-    scale: 0.8,
+    opacity: 0,
   },
 };
 
@@ -24,7 +23,7 @@ const BurgerSideBar = ({ burgerContents }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <HamburgerMenuContainer>
+    <>
       <HamburgerMenuIconContainer>
         <HamburgerMenuIcon
           className="hamburgerMenu"
@@ -51,7 +50,7 @@ const BurgerSideBar = ({ burgerContents }) => {
           </StyledAnchor>
         ))}
       </StyledMenu>
-    </HamburgerMenuContainer>
+    </>
   );
 };
 
