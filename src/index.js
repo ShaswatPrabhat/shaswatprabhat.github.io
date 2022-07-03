@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './fonts/wotfard-regular-webfont.eot';
+import './fonts/wotfard-regular-webfont.ttf';
+import './fonts/wotfard-regular-webfont.woff2';
 import './index.css';
 import App from './screens/app/App';
 import reportWebVitals from './reportWebVitals';
