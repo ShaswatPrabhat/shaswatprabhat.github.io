@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import HamburgerMenuIcon from 'react-hamburger-menu';
 import {
   HamburgerMenuIconContainer,
   StyledMenu,
+  BurgerSideBarLink,
 } from './burger-side-bar.styles';
-import { StyledAnchor } from '../../screens/app/App.styles';
 
 const framerStyledAnchorVariants = {
   opened: {
     opacity: 1,
     transition: {
       delay: 0.2,
-      duration: 1,
+      duration: 1.5,
     },
   },
   closed: {
@@ -22,6 +22,13 @@ const framerStyledAnchorVariants = {
 const BurgerSideBar = ({ burgerContents }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isMenuOpen]);
   return (
     <>
       <HamburgerMenuIconContainer>
@@ -36,9 +43,14 @@ const BurgerSideBar = ({ burgerContents }) => {
           color="#61dafb"
         />
       </HamburgerMenuIconContainer>
-      <StyledMenu open={isMenuOpen}>
+      <StyledMenu
+        open={isMenuOpen}
+        isOpen={isMenuOpen}
+        preventScroll={true}
+        closeTimeoutMS={1000}
+      >
         {burgerContents.map(({ link, title }) => (
-          <StyledAnchor
+          <BurgerSideBarLink
             variants={framerStyledAnchorVariants}
             animate={isMenuOpen ? 'opened' : 'closed'}
             to={link}
@@ -47,7 +59,7 @@ const BurgerSideBar = ({ burgerContents }) => {
             }}
           >
             {title}
-          </StyledAnchor>
+          </BurgerSideBarLink>
         ))}
       </StyledMenu>
     </>
