@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.afb20876.css",
-    "main.js": "/static/js/main.aa46ca69.js",
+    "main.css": "/static/css/main.b1f406b4.css",
+    "main.js": "/static/js/main.d4c98b79.js",
     "static/js/617.a07f4c32.chunk.js": "/static/js/617.a07f4c32.chunk.js",
     "static/js/787.f587e8d5.chunk.js": "/static/js/787.f587e8d5.chunk.js",
     "static/js/587.74e29527.chunk.js": "/static/js/587.74e29527.chunk.js",
@@ -66,14 +66,14 @@
     "static/media/wotfard-regular-webfont.eot": "/static/media/wotfard-regular-webfont.2d3a69534cf02515f108.eot",
     "static/media/wotfard-regular-webfont.woff2": "/static/media/wotfard-regular-webfont.7116feee27c824067b2c.woff2",
     "index.html": "/index.html",
-    "main.afb20876.css.map": "/static/css/main.afb20876.css.map",
-    "main.aa46ca69.js.map": "/static/js/main.aa46ca69.js.map",
+    "main.b1f406b4.css.map": "/static/css/main.b1f406b4.css.map",
+    "main.d4c98b79.js.map": "/static/js/main.d4c98b79.js.map",
     "617.a07f4c32.chunk.js.map": "/static/js/617.a07f4c32.chunk.js.map",
     "787.f587e8d5.chunk.js.map": "/static/js/787.f587e8d5.chunk.js.map",
     "587.74e29527.chunk.js.map": "/static/js/587.74e29527.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afb20876.css",
-    "static/js/main.aa46ca69.js"
+    "static/css/main.b1f406b4.css",
+    "static/js/main.d4c98b79.js"
   ]
 }
